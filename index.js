@@ -23,7 +23,7 @@ client.on("ready", () => {
 
 client.on("messageCreate", (msg) => {
     let command = msg.content;
-    KETQUA = command.split("!gen ")[1]
+    KETQUA = command.split("!gen ")[1];
     console.log(KETQUA);
 });
 
@@ -33,7 +33,7 @@ app.get("/", (req, res) => {
     res.send(KETQUA);
 });
 
-app.listen(80, () => {
+app.listen(80, "0.0.0.0", () => {
     console.log(`Example app listening on port ${80}`);
 });
 
