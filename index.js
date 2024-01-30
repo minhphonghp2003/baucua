@@ -33,8 +33,8 @@ app.get("/", (req, res) => {
     res.send(KETQUA);
 });
 
-app.listen(port, () => {
-    console.log(`Example app listening on port ${port}`);
+app.listen(80, () => {
+    console.log(`Example app listening on port ${80}`);
 });
 
 client.login(process.env.CLIENT_TOKEN); //signs the bot in with token
